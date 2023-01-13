@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="stylesheet" href="styles.css"></head>
+
+<body>
+  <nav id="navbar">
+    <header>
+      <h1>Documentación de Python</h1>
+    </header>
+    <ul class="barra">
+      <li><a class="nav-link" href="#Introducción">Introducción</a></li>
+
+      <li><a class="nav-link" href="#Conocimientos_previos">Conocimientos previos</a></li>
+
+      <li><a class="nav-link" href="#Modo_interactivo">Modo interactivo</a></li>
+
+      <li><a class="nav-link" href="#Un_lenguaje_de_fácil_lectura">Un lenguaje de fácil lectura</a></li>
+
+      <li><a class="nav-link" href="#Comentarios">Comentarios</a></li>
+
+      <li><a class="nav-link" href="#Variables">Variables</a></li>
+
+      <li><a class="nav-link" href="#Tipo_de_datos">Tipo de datos</a></li>
+
+      <li><a class="nav-link" href="#Condicionales">Condicionales</a></li>
+
+      <li><a class="nav-link" href="#Sentencias_switch_case">Sentencias switch case</a></li>
+
+      <li><a class="nav-link" href="#Clases">Clases</a></li>
+
+      <li><a class="nav-link" href="#Referencia">Referencia</a></li>
+    </ul>
+  </nav>
+
+<main id="main-doc">
+  <section class="main-section" id="Introducción">
+    <header> <h1>Introducción</h1>
+      </header>
+    <p>
+   Python es un lenguaje de programación multiparadigma, es decir permite varios estilos: programación orientada a objetos, programación imperativa y programación funcional. Otros paradigmas están soportados mediante el uso de extensiones. Python usa tipado dinámico y conteo de referencias para la gestión de memoria.</p>
+   <p>Una característica importante de Python es la resolución dinámica de nombres; es decir, lo que enlaza un método y un nombre de variable durante la ejecución del programa (también llamado enlace dinámico de métodos).</p>
+  </section>
+
+  <section class="main-section" id="Conocimientos_previos">
+    <header>
+      <h1>Conocimientos previos</h1>
+      </header>
+    <p>Para abordar la temática de esta guía, se preveen algunos conocimientos previos:</p>
+      <ul>
+      <li>Una comprensión general de Internet y la World Wide Web (WWW).</li>
+<li>Algo de experiencia en programación.</li>
+        </ul>
+  </section>
+
+  <section class="main-section" id="Modo_interactivo">
+    <header>
+      <h1>Modo interactivo</h1>
+      </header>
+    <p>El intérprete de Python estándar incluye un modo interactivo en el cual se escriben las instrucciones en una especie de intérprete de comandos: las expresiones pueden ser introducidas una a una, pudiendo verse el resultado de su evaluación inmediatamente, lo que da la posibilidad de probar porciones de código en el modo interactivo antes de integrarlo como parte de un programa. </p>
+  </section>
+
+  <section class="main-section" id="Un_lenguaje_de_fácil_lectura">
+    <header>
+      <h1>Un lenguaje de fácil lectura</h1>
+      </header>
+    <p>Diseñado para ser leído con facilidad, su formato es visualmente ordenado. Una de sus características es el uso de palabras donde otros lenguajes utilizarían símbolos. Por ejemplo, los operadores lógicos <code>!</code>, <code>||</code> y <code>&&</code> en Python se escriben <code>not</code>, <code>or</code> y <code>and</code>, respectivamente. </p>
+    <p>El contenido de los bloques de código (bucles, funciones, clases, etc.) es delimitado mediante espacios o tabuladores (indentación) antes de cada línea de órdenes pertenecientes al bloque. Python se diferencia así de otros lenguajes de programación que mantienen como costumbre declarar los bloques mediante un conjunto de caracteres, normalmente entre llaves <code>{}</code>. Se pueden utilizar tanto espacios como tabuladores para sangrar el código, pero se recomienda no mezclarlos.</p>
+  </section>
+
+  <section class="main-section" id="Comentarios">
+    <header>
+      <h1>Comentarios</h1>
+      </header>
+      <p>Los comentarios se pueden poner de dos formas. La primera y más apropiada para comentarios largos es utilizando la notación <code>''' comentario '''</code>, tres apóstrofos de apertura y tres de cierre. La segunda notación utiliza el símbolo <code>#</code>, y se extienden hasta el final de la línea.</p>
+<p>El intérprete no tiene en cuenta los comentarios, lo cual es útil si deseamos poner información adicional en el código. Por ejemplo, una explicación sobre el comportamiento de una sección del programa.
+</p>
+  </section>
+
+  <section class="main-section" id="Variables">
+    <header>
+      <h1>Variables</h1>
+      </header>
+      <p>Las variables se definen de forma dinámica, es decir, que no se tiene que especificar cuál es su tipo de antemano y puede tomar distintos valores en otro momento, incluso de un tipo diferente al que tenía previamente. Se usa el símbolo <code>=</code> para asignar valores.</p>
+    <p class="code">
+      <code>x = 1</code><br>
+      <code>x = "texto" # Esto es posible porque los tipos son asignados dinámicamente
+</code></p>
+  </section>
+
+  <section class="main-section" id="Tipo_de_datos">
+    <header>
+      <h1>Tipo de datos</h1>
+      </header>
+      <p>Los tipos de datos se pueden clasificar en:</p>
+      <ul>
+<li>	Mutable: si su contenido (o dicho valor) puede cambiarse en tiempo de ejecución.</li>
+<li>Inmutable: si su contenido (o dicho valor) no puede cambiarse en tiempo de ejecución.</li>
+    </ul>
+      <p>Algunos ejemplos de tipos de datos son: <code class="code">str, Unicode, list, tuple, set, frosenset</code>, entre otros.
+      </p>
+  </section>
+
+  <section class="main-section" id="Condicionales">
+    <header>
+      <h1>Condicionales</h1>
+      </header>
+      <p>Una sentencia condicional (if) ejecuta su bloque de código interno solo si se cumple cierta condición. Se define usando la palabra clave <code>if</code> seguida de la condición, y el bloque de código. Si existen condiciones adicionales, se introducen usando la palabra clave <code>elif</code> seguida de la condición y su bloque de código. Las condiciones se evalúan de manera secuencial hasta encontrar la primera que sea verdadera, y su bloque de código asociado es el único que se ejecuta. Opcionalmente, puede haber un bloque final (la palabra clave <code>else</code> seguida de un bloque de código) que se ejecuta solo cuando todas las condiciones anteriores fueron falsas.
+      </p>
+      <p class="code">
+      <code>>>> verdadero = True<br>
+>>> if verdadero: # No es necesario poner "verdadero == True"<br>
+...       print("Verdadero")<br>
+... else:<br>
+...     print("Falso")<br>
+...<br>
+Verdadero<br>
+>>> lenguaje = "Python"<br>
+>>> if lenguaje == "C": # lenguaje no es "C", por lo que este bloque se obviará y evaluará la siguiente condición<br>
+...     print("Lenguaje de programación: C")<br>
+... elif lenguaje == "Python": # Se pueden añadir tantos bloques "elif" como se quiera<br>
+...     print("Lenguaje de programación: Python")<br>
+... else: # En caso de que ninguna de las anteriores condiciones fuera cierta, se ejecutaría este bloque<br>
+...     print("Lenguaje de programación: indefinido")<br>
+...<br>
+Lenguaje de programación: Python<br>
+>>> if verdadero and lenguaje == "Python": # Uso de "and" para comprobar que ambas condiciones son verdaderas<br>
+...     print("Verdadero y Lenguaje de programación: Python")<br>
+...<br>
+Verdadero y Lenguaje de programación: Python
+      </code>
+      </p>
+  </section>
+
+  <section class="main-section" id="Sentencias_switch_case">
+    <header>
+      <h1>Sentencias switch case</h1>
+      </header>
+      <p>Python cuenta con la estructura switch-case desde la versión 3.10. Esta tiene el nombre de Structural Pattern Matching.
+      </p>
+     <p class="code">
+      <code>match variable:<br>
+	case condicion:<br>
+		# codigo<br>
+	case condicion:<br>
+		# codigo<br>
+	case condicion:<br>
+		# codigo<br>
+	case _:<br>
+		# codigo
+      </code>
+    </p>
+  </section>
+
+  <section class="main-section" id="Clases">
+    <header>
+      <h1>Clases</h1>
+      </header>
+      <ul>
+        <li>Las clases se definen con la palabra clave <code>class</code>, seguida del nombre de la clase y, si hereda de otra clase, el nombre de esta.</li>
+        <li>En Python 2.x era recomendable que una clase heredase de "Object", en Python 3.x ya no hace falta.</li>
+        <li>En una clase un "método" equivale a una "función", y un "atributo" equivale a una "variable".</li>
+        <li>"__init__" es un método especial que se ejecuta al instanciar la clase, se usa generalmente para inicializar atributos y ejecutar métodos necesarios. Al igual que todos los métodos en Python, debe tener al menos un parámetro, generalmente se utiliza <code>self</code>. El resto de parámetros serán los que se indiquen al instanciar la clase.</li>
+        <li>Los atributos que se desee que sean accesibles desde fuera de la clase se deben declarar usando <code>self</code> delante del nombre.</li>
+        <li>En Python no existe el concepto de encapsulación, por lo que el programador debe ser responsable de asignar los valores a los atributos</li>
+      </ul>
+  </section>
+
+  <section class="main-section" id="Referencia">
+    <header>
+      <h1>Referencia</h1>
+      </header>
+      <p>Toda la documentación de esta página está recopilada de <a href="https://es.wikipedia.org/wiki/Python">Wikipedia</a>
+      </p>
+  </section>
+</main>
+<body>
+</html>
